@@ -26,7 +26,7 @@ header {
 section {
   display: -webkit-flex;
   display: flex;
-  text-align: center;
+  text-align: left;
  }
 
 /* Style the navigation menu */
@@ -35,21 +35,23 @@ nav {
   -ms-flex: 1;
   flex: 1;
   padding: none;
- }
+}
 
 nav ul {
   list-style-type: none;
   margin: none;
-  padding: 0;
+  padding: 95px 95px;
   overflow: hidden;
   font-size: 30px;
 }
 
+/*Format the nav bar, using inline*/
 nav ul li {
   float: left;
-  text-align:center;
+  text-align: center;
 }
 
+/*Define the link characterstics and style the words*/
 nav ul li a {
   display: block;
   color: white;
@@ -58,21 +60,28 @@ nav ul li a {
   text-decoration: none;
 }
 
+/*create the navigation bar background color when hovering over a tab*/
 nav ul li a:hover {
   background-color: pink;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   section {
     -webkit-flex-direction: column;
     flex-direction: column;
+
+@media (min-width: 200px) {
+  nav ul li {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    float: center;
   }
 }
 
 * {
   box-sizing: border-box;
-}
+ }
 
 body {
   font-family: monaco, monospace;
@@ -200,10 +209,6 @@ div.responsive {
 
 <div style="padding:6px;">
 </div>
-
-</body>
-</html>
-
 
 </body>
 </html>
