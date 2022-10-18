@@ -5,7 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: monaco, monospace;
@@ -18,23 +20,20 @@ header {
   text-align: center;
   font-size: 60px;
   color: pink;
-  margin-bottom: -277px;
 }
 
 /* Container for flexboxes */
 section {
   display: -webkit-flex;
   display: flex;
-  margin-right: -59.5px;
-  margin-left: -59.5px;
-}
+ }
+
 /* Style the navigation menu */
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: white;
-  padding: none;
+   padding: none;
 }
 
 nav ul {
@@ -42,8 +41,7 @@ nav ul {
   margin: none;
   padding: 0;
   overflow: hidden;
-  background-color: white;
-  font-size: 30px;
+    font-size: 30px;
 }
 
 nav ul li {
@@ -52,7 +50,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 22px;
   text-decoration: none;
@@ -68,7 +66,59 @@ nav ul li a:hover {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-}  
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  float:left;
+}
+
+.responsive {
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (max-width: none) {
+  .responsive {
+    width: auto;
+    
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 25%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -76,7 +126,7 @@ nav ul li a:hover {
 <header>
 <h1 style="font-family: monaco, monospace;
            font-size:60px;
-           background-color:black;
+           margin:none;
            color:white;">Two Face Gemini Collective</h1>
 <header>
 
@@ -92,5 +142,55 @@ nav ul li a:hover {
   <nav>    
 <section>
 
+<header>
+<h2 style="font-family: monaco, monospace;
+           font-size:20px;
+           margin:none;
+           color:white;">Highlights!</h1>
+<header>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+
 </body>
 </html>
+
