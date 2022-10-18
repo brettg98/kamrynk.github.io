@@ -1,2 +1,94 @@
-<h1 style="background-color:Black; style="colour:White:">Two Face Gemini Collective</h1>
-<p style="background-color:Tomato;">Welcome</p>
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monaco, monospace;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 60px;
+  color: pink;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: pink;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}  
+</style>
+</head>
+<body>
+
+<header>
+<h1 style="font-family: monaco, monospace;
+           font-size:60px;
+           background-color:black;
+           color:white;">Two Face Gemini Collective</h1>
+<header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#TFGC Artists">TFGC Artists</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Contact Us"> Contact Us</a></li>  
+	<ul>
+  <nav>    
+<section>
+
+</body>
+</html>
