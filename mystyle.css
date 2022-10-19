@@ -61,21 +61,26 @@ nav ul li a:hover {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  margin: auto;
+  border: auto solid pink;
+  float: left;
+  width: auto;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 5px solid pink;
 }
 
 div.gallery img {
+  margin: 5px;
+  float: center;
   width: 100%;
-  height: auto;
-}
+  }
 
 div.desc {
-  padding: 15px;
+  padding: 5px;
   text-align: center;
+  color: white;
 }
 
 * {
