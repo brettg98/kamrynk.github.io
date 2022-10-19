@@ -49,6 +49,7 @@ nav ul {
 nav ul li {
   float: left;
   text-align: center;
+  overflow: hidden;
 }
 
 /*Define the link characterstics and style the words*/
@@ -65,31 +66,16 @@ nav ul li a:hover {
   background-color: pink;
 }
 
+/* Create the active nav tab background colour*/
+nav ul li a:hover:not(.active) {background-color: light blue;}
+
+/* Create the center float function for the nav bar*/
+nav ul li.center {float: center}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media screen and (max-width: 2500px) {
-  .responsive {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    
-@media screen and (min-width: 200px) {
-  .resposive {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    float: center;
-
-  }
-}
-
-* {
-  box-sizing: border-box;
- }
-
-body {
-  font-family: monaco, monospace;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
+@media screen and (max-width: 650px) {
+  nav ul li.center
+  nav ul lo {float: center;}
 }
 
 div.gallery:hover {
@@ -97,7 +83,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -106,32 +92,23 @@ div.desc {
   text-align: center;
 }
 
-div.responsive {
-  padding: 0px 6px;
+.responsive {
+  padding: 0 6px;
   float: center;
   width: 24.99999%;
+  }
 }
     
-
-@media screen and (max-width: 2500px) {
+@media only screen and (max-width: 700px) {
   .responsive {
     width: 50%;
     margin: 6px 0;
-    float: center;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .responsive {
     width: 50%;
-    float: center;
-  }
-}
-
-@media screen and (min-width: 200px) {
-  .responsive {
-    width: 25%;
-    float: center;
   }
 }
 
@@ -155,9 +132,9 @@ div.responsive {
   <nav>
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#TFGC Artists">TFGC Artists</a></li>
-      <li><a href="#Events">Events</a></li>
-      <li><a href="#About">About</a></li>
+      <li><a class="center" href="#TFGC Artists">TFGC Artists</a></li>
+      <li><a class="center" href="#Events">Events</a></li>
+      <li><a class="center" href="#About">About</a></li>
       <li><a href="#Contact Us"> Contact Us</a></li>  
 	<ul>
   <nav>    
