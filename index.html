@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<body>
-<link rel="stylesheet" href="mystyle.css">
-<title>Two Face Gemini Collective Home Page</title>
+<head>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 <div class= "header">
 <h1 style="font-family: monaco, monospace;
            font-size:60px;
@@ -12,21 +12,36 @@
            background-color: black;
            padding: 30px;
            color:white;">Two Face Gemini Collective</h1>
-
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#TFGC Artists">TFGC Artists</a></li>
-  <li><a href="#Events">Events</a></li>
-  <li><a href="#About">About TFGC</a></li>
-  <li><a href="#Contact Us"> Contact Us</a></li>
-</ul>
-
+	<head>
+    	<link rel="stylesheet" href="background_styles.css">
+        <link rel="stylesheet" href="mystyles.css">
+        <script src="script.js" defere></script>
+    </head>
+    <body>
+    	<nav class="navbar">
+        	
+            <a href="#" class="toggle-button">
+            	<span class"bar"></span>
+                <span class"bar"></span>
+                <span class"bar"></span>
+            </a>
+            <div class="navbar-links">
+            	<ul><img src="pic_trulli.jpg" alt="brand-title">Italian Trulli</img>
+                	 <li><a class="active" href="#home">Home</a></li>
+  					 <li><a href="#TFGC Artists">TFGC Artists</a></li>
+  					 <li><a href="#Events">Events</a></li>
+  					 <li><a href="#About">About TFGC</a></li>
+  					 <li><a href="#Contact Us"> Contact Us</a></li>
+               </ul>
+             </div>
+         </nav>
+         
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="TFGC_Logo1.png">
-      <img src="TFGC_Logo1.png" alt="Two Face Gemini Collective" width="1081" height="1081">
+      <img src="TFGC_Logo1.png" alt="TFGC World Logo" width="1081" height="1081">
     </a>
-    <div class="desc">Two Face Gemini Collective World Logo</div>
+    <div class="desc">Two Face Gemini Collective</div>
   </div>
 </div>
 
@@ -34,13 +49,13 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="TFGC_Logo2.jpg">
-      <img src="TFGC_Logo2.jpg" alt="Two Face Gemini Collective" width="1280" height="1280">
+      <img src="TFGC_Logo2.jpg" alt="TFC Masquerade Logo" width="1280" height="1280">
     </a>
-    <div class="desc">Two Face Gemini Collective Happy-Sad Masquerade Logo</div>
+    <div class="desc">Two Face Gemini Collective</div>
   </div>
 </div>
 
-<div class="clearfix"></div>
+<div class="clearfix"></div>         
 
 </body>
 </html>
