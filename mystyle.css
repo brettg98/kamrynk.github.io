@@ -15,93 +15,86 @@ body {
 }
 
 /* Style the header */
-header {
+.header {
   background-color: black;
   padding: 30px;
-  text-align: center;
-  font-size: 60px;
-  color: white;
-}
-
-/* Container for flexboxes */
-section { 
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
  }
 
 /* Style the navigation menu */
-nav ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   font-size: 30px;
-  float: left;
+  float: center;
 }
 
 /*Format the nav bar, using inline*/
-nav ul li {
+ul li {
   float: left;
-  text-align: center;
-  overflow: hidden;
 }
 
 /*Define the link characterstics and style the words*/
-nav ul li a {
+ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 22px;
+  padding: 20px 22px;
   text-decoration: none;
 }
 
 /*create the navigation bar background color when hovering over a tab*/
-nav ul li a:hover {
+ul li a:hover {
   background-color: pink;
 }
 
+li a.active {
+  color: white;
+  background-color: #B1E9F4;
+}
+
+/* Create the image gallery*/
 div.gallery {
-  margin: auto;
-  float: left;
-  max-width: 50%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
 div.gallery img {
-  margin: 5px;
-  float: center;
-  max-width: 50%;
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
-  padding: 5px;
+  padding: 15px;
   text-align: center;
   color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
-  padding: 0 6px;
-  float: center;
-  max-width: 100%;
-  }
+  padding: 60px 60px;
+  float: left;
+  width: 24.99999%;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .responsive {
-    max-width: 50%;
+    width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media screen and (max-width: 601px) {
+@media only screen and (max-width: 500px) {
   .responsive {
-    max-width: 20%;
+    width: 100%;
   }
-}  
+}
 
 .clearfix:after {
   content: "";
