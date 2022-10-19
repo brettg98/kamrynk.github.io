@@ -60,12 +60,6 @@ nav ul li a:hover {
   background-color: pink;
 }
 
-/* Create the active nav tab background colour*/
-nav ul li a:hover:not(.active) {background-color: light blue;}
-
-/* Create the center float function for the nav bar*/
-nav ul li.center {float: center}
-
 div.gallery {
   border: 1px solid #ccc;
 }
