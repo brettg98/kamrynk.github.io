@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monaco, monospace;
+  margin: 0;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Container for flexboxes */
+section { 
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+ }
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 30px;
+  float: left;
+}
+
+/*Format the nav bar, using inline*/
+nav ul li {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*Define the link characterstics and style the words*/
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+}
+
+/*create the navigation bar background color when hovering over a tab*/
+nav ul li a:hover {
+  background-color: pink;
+}
+
+/* Create the active nav tab background colour*/
+nav ul li a:hover:not(.active) {background-color: light blue;}
+
+/* Create the center float function for the nav bar*/
+nav ul li.center {float: center}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: center;
+  max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .responsive {
+    width: 50%;
+  }
+}  
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
