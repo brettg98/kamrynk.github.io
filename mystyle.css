@@ -36,7 +36,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   font-size: 30px;
-  float: center;
+  float: left;
 }
 
 /*Format the nav bar, using inline*/
