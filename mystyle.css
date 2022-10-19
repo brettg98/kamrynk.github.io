@@ -21,45 +21,95 @@ body {
   text-align: center;
  }
 
-/* Style the navigation menu */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-size: 30px;
-  float: center;
+.navbar {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}    
+
+.brand-title {
+	font-size: 1.5rem;
+    margin: .5rem;
 }
 
-/*Format the nav bar, using inline*/
-ul li {
-  float: left;
+.navbar-links ul {
+	margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/*Define the link characterstics and style the words*/
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 22px;
-  text-decoration: none;
+.navbar-links li {
+	list-style: none;
 }
 
-/*create the navigation bar background color when hovering over a tab*/
-ul li a:hover {
-  background-color: pink;
+.navbar-links li a {
+	text-docration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+ 
+.navbar-links li:hover {
+ 	background-color: pink;
 }
 
-li a.active {
-  color: white;
-  background-color: #B1E9F4;
+.toggle-button {
+	position: absolute;
+    top: .75rem;
+    right: 1rem;
+    dispay: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px {
+	.toggle {
+    	display: flex;
+    }
+    
+    .navbar-links {
+    	display: none;
+    }
+    
+    .navbar {
+    	flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul {
+    	width: 100%
+        flex-direction: column;
+    }
+    
+    .navbarlinks li {
+    	text-align: center;
+    }
+    
+    .navbar-links li a {
+    	padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active {
+    	display: flex;
+    }
 }
 
 /* Create the image gallery*/
 div.gallery {
   margin: 10px;
   border: 1px solid #ccc;
-  width: 180px;
+  width: 500px;
 }
 
 div.gallery:hover {
@@ -80,19 +130,19 @@ div.desc {
 .responsive {
   padding: 60px 60px;
   float: left;
-  width: 24.99999%;
+  width: 50%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .responsive {
-    width: 49.99999%;
     margin: 6px 0;
+    display: flex;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .responsive {
-    width: 100%;
+    display: flex;
   }
 }
 
@@ -100,7 +150,5 @@ div.desc {
   content: "";
   display: table;
   clear: both;
-}
-</style>
-</head>
-<body>
+ </style>
+ </body>
