@@ -64,13 +64,13 @@ nav ul li a:hover {
 div.gallery {
   margin: auto;
   float: left;
-  width: 50%;
+  max-width: 50%;
 }
 
 div.gallery img {
   margin: 5px;
   float: center;
-  width: 100%;
+  max-width: 50%;
 }
 
 div.desc {
@@ -92,14 +92,14 @@ div.desc {
 
 @media screen and (max-width: 700px) {
   .responsive {
-    width: 50%;
+    max-width: 50%;
     margin: 6px 0;
   }
 }
 
 @media screen and (max-width: 601px) {
   .responsive {
-    width: 20%;
+    max-width: 20%;
   }
 }  
 
