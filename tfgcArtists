@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<body>
+<a link href="tfgcArtists.html">About TFGC</a>
+<link rel="stylesheet" href="mystyle.css">
+<title>Two Face Gemini Collective Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class= "header">
+<h1 style="font-family: monaco, monospace;
+           font-size:60px;
+           margin:none;
+           background-color: black;
+           padding: 30px;
+           color:white;">Two Face Gemini Collective</h1>
+    <head>
+    	<link rel="stylesheet" href="background_styles.css">
+        <link rel="stylesheet" href="mystyles.css">
+        <script src="script.js" defere></script>
+    </head>
+    <body>
+    	<nav class="navbar">
+          <div clas="brand-title">TFGC</div>	
+          <a href="#" class="toggle-button">
+            <span class"bar"></span>
+            <span class"bar"></span>
+            <span class"bar"></span>
+          </a>
+          <div class="navbar-links">
+	        <ul> 
+              <li><a class="active" href="index.html">Home</a></li>
+  	          <li><a href="tfgcArtists">TFGC Artists</a></li>
+  	          <li><a href="aboutTFGC">About TFGC</a></li>
+  	          <li><a href="ContactUs"> Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Khalil.jpg">
+      <img src="Khalil.jpg" alt="Two Face Gemini Collective Artist: Khalil" width="422" height="422">
+    </a>
+    <div class="desc">Two Face Gemini Recrods Founder and Lead Artist, Khalil</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Aphrodite's Successor.jpg">
+      <img src="Aphrodite's Succesor.jpg" alt="Two Face Gemini Collective Artist: Aphrodite's Succesor" width="649" height="649">
+    </a>
+    <div class="desc">Two Face Gemini Collective Artist, Aphrodite's Succesor</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Aaronikk.jpg">
+      <img src="Aaronikk.jpg" alt="Two Face Gemini Collective Artist: Aaronikk" width="825" height="825">
+    </a>
+    <div class="desc">Two Face Gemini Collective Branded Affiliate Artist, Aaronikk</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="J-Ro$e.jpg">
+      <img src="J-Ro$e.jpg" alt="Two Face Gemini Artist and Producer: J-Ro$e" width="1170" height="1170">
+    </a>
+    <div class="desc">Two Face Gemini Collective Official Producer, Artist: J-Ro$e</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Vile Murk.jpg">
+      <img src="Vile Murk.jpg" alt="Two Face Gemini Collective Artist: Vile Murk" width="747" height="748">
+    </a>
+    <div class="desc">Two Face Gemini Collective Branded Affilate Artist, Vile Murk</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Duo Sancti.jpg">
+      <img src="Duo Sancti.jpg" alt="Two Face Gemini Artist and Producer: Duo Sancti" width="579" height="579">
+    </a>
+    <div class="desc">Two Face Gemini Collective Branded Affiliate Artist, Duo Sancti</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="x_the_martian.jpg">
+      <img src="x_the_martian.jpg" alt="Two Face Gemini Collective Artist: x_the_martian" width="753" height="753">
+    </a>
+    <div class="desc">Two Face Gemini Collective Branded Affilate Artist, x_the_martian</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
