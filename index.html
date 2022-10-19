@@ -11,6 +11,7 @@
 
 body {
   font-family: monaco, monospace;
+  margin: 0;
 }
 
 /* Style the header */
@@ -23,19 +24,12 @@ header {
 
 /* Container for flexboxes */
 section { 
-  display: -webkit-flex;
   display: flex;
+  flex-wrao: wrap;
   text-align: left;
  }
 
 /* Style the navigation menu */
-nav {
-  display: -webkit-flex: 1;
-  display: -ms-flex: 1;
-  flex: 1;
-  padding: 10px 0;
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -72,19 +66,13 @@ nav ul li a:hover:not(.active) {background-color: light blue;}
 /* Create the center float function for the nav bar*/
 nav ul li.center {float: center}
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media screen and (max-width: 650px) {
-  nav ul li.center
-  nav ul lo {float: center;}
-}
-
 div.gallery:hover {
   border: 1px solid #777;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: auto
 }
 
 div.desc {
@@ -92,26 +80,37 @@ div.desc {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .responsive {
   padding: 0 6px;
   float: center;
-  width: 24.99999%;
+  width: auto;
   }
 }
     
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  nav ul li.center
+  nav ul li {float: center;}
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
-    width: 50%;
+    width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
   .responsive {
-    width: 50%;
+    width: 100%;
   }
-}
-
+}  
+ 
 .clearfix:after {
   content: "";
   display: table;
@@ -132,9 +131,9 @@ div.desc {
   <nav>
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <li><a class="center" href="#TFGC Artists">TFGC Artists</a></li>
-      <li><a class="center" href="#Events">Events</a></li>
-      <li><a class="center" href="#About">About</a></li>
+      <li><a href="#TFGC Artists">TFGC Artists</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#About">About</a></li>
       <li><a href="#Contact Us"> Contact Us</a></li>  
 	<ul>
   <nav>    
@@ -142,12 +141,11 @@ div.desc {
 
 <header>
 <h2 style="font-family: monaco, monospace;
-           font-size:20px;
+           font-size:25px;
            margin:none;
-           color:white;">Highlights!</h1>
+           color:white;">Meet The Team!</h1>
 <header>
 
-<section>
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_5terre.jpg">
@@ -156,9 +154,7 @@ div.desc {
     <div class="desc">Add a description of the image here</div>
   </div>
 </div>
-<section>
 
-<section>
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_forest.jpg">
@@ -167,9 +163,7 @@ div.desc {
     <div class="desc">Add a description of the image here</div>
   </div>
 </div>
-<section>
 
-<section>
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_lights.jpg">
@@ -178,9 +172,7 @@ div.desc {
     <div class="desc">Add a description of the image here</div>
   </div>
 </div>
-<section>
 
-<section>
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_mountains.jpg">
@@ -189,7 +181,6 @@ div.desc {
     <div class="desc">Add a description of the image here</div>
   </div>
 </div>
-<section>
 
 <div class="clearfix"></div>
 
