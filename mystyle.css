@@ -1,157 +1,47 @@
-<!DOCTYPE html>
-<html lang="en-CA">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: monaco, monospace;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  background-color: black;
-  padding: 30px;
-  text-align: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: white;
-  padding: 20px;
-}    
-
-.brand-title {
-  font-size: 1.5rem;
-  margin: .5rem;
-}
-
-.navbar-links ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    display: block;
-}
- 
-.navbar-links li:hover {
-    background-color: pink;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    dispay: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 500px {
-    .toggle {
-        display: flex;
-   }
-    
-    .navbar-links {
-    	display: none;
-   }
-    
-    .navbar {
-    	flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .navbar-links ul {
-    	width: 100%;
-      flex-direction: column;
-    }
-    
-    .navbarlinks li {
-    	text-align: center;
-    }
-    
-    .navbar-links li a {
-    	padding: .5rem 1rem;
-    }
-    
-    .navbar-links.active {
-    	display: flex;
-    }
-}
+body { font-family:monaco,monospace;color:#fff;margin:0;background-color:#000;}
+.header { background-color: black; padding: 30px;text-align: center;}
+.navbar {display: flex;justify-content: space-between;align-items: center;background-color: black;color: white;padding: 20px;}
+.brand-title {font-size: 1.5rem;margin: .5rem;}
+.navbar-links ul {margin: 0;padding: 0;display: flex;}
+.navbar-links li {list-style: none;}
+.navbar-links li a {text-decoration: none;color: white;padding: 1rem;display: block;}
+.navbar-links li:hover {background-color: pink;}
+.toggle-button {position: absolute;top: .75rem;right: 1rem;dispay: none;flex-direction: column;justify-content: space-between;width: 30px;height: 21px;}
+.toggle-button .bar {height: 3px;width: 100%;background-color: white;border-radius: 10px;}
+.center {display:block;margin-left:auto;margin-right:auto;width:100%;}
+h1,h2,h3,h4,h5,h6{text-align:center;}
+h1{font-size:60px;margin:0;padding:30px;}
+h2{font-size:45px;margin:0;padding:30px;}
+img a{border:0;}
+header{text-align:center;}
+section,footer{margin:0 1em;}
+#hero{margin:0 1em;}
+#hero img{display:block;margin-left:auto;margin-right:auto;width:50%;}
+#hero p{text-align:center;}
+#gallery{margin:0 1em;}
+#gallery picture img{display:block;margin-left:auto;margin-right:auto;width:50%;}
+#gallery picture p{text-align:center;}
 
 /* Create the image gallery*/
-div.gallery {
-  margin: 30px;
-  border: 1px solid #ccc;
-  width: 500px;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  color: white;
-  margin: 15px;
-}
-
-.responsive {
-  padding: 60px 60px;
-  float: left;
-  width: 50%;
+@media (max-width: 500px) {
+    .toggle {display: flex;  }
+    .navbar-links {display: none;}
+    .navbar {flex-direction: column;lign-items: flex-start;}
+    .navbar-links ul {width: 100%;flex-direction: column;}
+    .navbarlinks li {text-align: center;}
+    .navbar-links li a {padding: .5rem 1rem;}
+    .navbar-links.active {display: flex;}
+    #hero img{display:block;margin-left:auto;margin-right:auto;width:100%;}
+    #gallery picture img{display:block;margin-left:auto;margin-right:auto;width:100%;}
 }
 
 @media only screen and (max-width: 900px) {
-  .responsive {
-    margin: 6px 0;
-    display: flex;
-  }
+  .responsive {margin: 6px 0;display: flex;}
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
-    display: flex;
-  }
+  .responsive {display: flex;}
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
- </style>
- </head>
-<body>
+.clearfix:after {content: "";display: table;clear: both;}
